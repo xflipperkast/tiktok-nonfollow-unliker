@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 from colorama import Fore, init
+from selenium.webdriver.chrome.service import Service as ChromeService
 
 init()  # Initialize colorama
 
@@ -13,9 +14,10 @@ profile_path = os.path.join(os.getcwd(), 'ttaut')
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument(f"user-data-dir={profile_path}")
-chrome_service = webdriver.Chrome(service=webdriver.ChromeService(executable_path='chromedriver.exe'), options=chrome_options)
-
+chrome_service = ChromeService(executable_path='chromedriver.exe')
 driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+
+
 driver.get('https://www.google.com/')
 print(Fore.GREEN + 'Go to TikTok via Google; otherwise, TikTok does not allow you to log in. XD')
 input("Please log in on the opened browser window, then type 'yes' and press Enter here to continue... ")
