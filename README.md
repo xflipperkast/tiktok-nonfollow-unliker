@@ -35,8 +35,9 @@ python main.py
 
 1. **Set Number of Checks**: The script will prompt you to enter the number of videos you want to check.
 2. **Login via Google**: A browser window will open. Navigate to TikTok via Google and log in to your account.
-3. **Confirm Login**: Type 'yes' in the terminal to continue once logged in.
-4. **Manual Captcha Handling**: If a captcha blocks the like button, you'll be prompted to handle it manually.
+3. **Confirm Login**: Continue once logged in.
+4. **Liked Videos**: Navigate to liked video's click one of them and type Yes in the terminal. Now it will unlike and scroll down.
+5. **Manual Captcha Handling**: If a captcha blocks the like button, you'll be prompted to handle it manually.
 
 ### Code References
 
