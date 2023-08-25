@@ -20,12 +20,6 @@ A Python script to automate video checks on TikTok. This tool allows users to de
 
 Clone the repository and install the required dependencies.
 
-\`\`\`bash
-git clone https://github.com/xflipperkast/tiktok-nonfollow-unliker
-cd tiktok-automation
-pip install -r requirements.txt
-\`\`\`
-
 **Requirements:**
 
 - `colorama==0.4.4`
